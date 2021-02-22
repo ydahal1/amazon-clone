@@ -10,3 +10,4 @@ Try Below -
 4. Remove Item from cart
 5. Watch the items increase/decrease and the number of items
 6. check out cart items
+7. use card number 42424242424242424242 and any exp or cvv code

@@ -10,6 +10,7 @@
   min-width: 100px;
   background: white;
   z-index: 1;
+  width: 300px;
 }
 
 .product > img {

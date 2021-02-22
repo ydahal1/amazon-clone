@@ -19,3 +19,10 @@
   margin-bottom: -150px;
   mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}

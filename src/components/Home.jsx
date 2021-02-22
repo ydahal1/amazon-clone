@@ -5,12 +5,8 @@ import { data } from "../dummyData/inventory";
 import cartStore from "../store/cartStore";
 
 function Home() {
-  // console.log(data[4].title, "$$$$$$$$$");
-  useEffect(() => {
-    console.log("STORE CHANGED ", cartStore.getState());
-  }, cartStore.data);
+  useEffect(() => {}, cartStore.data);
 
-  console.log("test");
   return (
     <div className="home">
       {/* 🔥 Banner Image */}
@@ -20,20 +16,10 @@ function Home() {
         alt="home page banner"
       />
       {/* 🔥 Featured Items */}
-      <div className="home__row">
-        {/* product */}
-        <Product data={data[1]} id="11" />
-        <Product data={data[2]} id="12" />
-      </div>
-      <div className="home__row">
-        {/* product */}
-        <Product data={data[3]} id="13" />
-        <Product data={data[4]} id="14" />
-        <Product data={data[5]} id="15" />
-      </div>
-      <div className="home__row">
-        {/* product */}
-        <Product data={data[0]} id="16" />
+      <div className="items">
+        {data.map(item => {
+          return <Product data={item} />;
+        })}
       </div>
     </div>
   );

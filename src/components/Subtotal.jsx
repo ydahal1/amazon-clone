@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./subtotal.css";
 import cartStore from "../store/cartStore";
 
+import { useHistory } from "react-router-dom";
+
 function Subtotal() {
+  const history = useHistory();
   const store = cartStore.getState();
-  let reducer = 0;
-  reducer = store.basket.reduce(
-    (accumulator, currentValue) => accumulator + currentValue.data.price,
-    0
-  );
 
   return (
     <div className="subtotal">
       <p>
-        Subtotal ({store.basket.length} items) : {reducer}
+        Subtotal ({store.basket.length} items) : {store.totalCost}
       </p>
       <small className="subtotal__gift">
         <input type="checkbox" />
         This order contains gift
       </small>
-      <button> Proceed to Checkout</button>
+      <button onClick={e => history.push("/payment")}>
+        Proceed to Checkout
+      </button>
     </div>
   );
 }

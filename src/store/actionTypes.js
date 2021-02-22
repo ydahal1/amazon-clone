@@ -17,3 +17,31 @@ export const addUser = payload => {
     payload: payload
   };
 };
+
+export const calculateTotal = payload => {
+  return {
+    type: "CALCULATE_TOTAL",
+    payload: payload
+  };
+};
+
+export const emptyBasket = payload => {
+  return {
+    type: "EMPTY_BASKET",
+    payload: payload
+  };
+};
+
+export const increaseQty = payload => {
+  return {
+    type: "ADD_QTY",
+    payload: payload
+  };
+};
+
+export const decreaseQty = payload => {
+  return {
+    type: "DECREMENT_QTY",
+    payload: payload
+  };
+};

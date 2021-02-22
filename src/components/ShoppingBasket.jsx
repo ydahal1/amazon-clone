@@ -3,7 +3,6 @@ import BasketItem from "./BasketItem";
 import React, { useState } from "react";
 import cartStore from "../store/cartStore";
 import { v4 as uuidv4 } from "uuid";
-import FlipMove from "react-flip-move";
 
 function ShoppingBasket() {
   const store = cartStore.getState();

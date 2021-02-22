@@ -1,0 +1,63 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__itemcount {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
+}
+
+.payment__deliveryAddress {
+  display: flex;
+  background: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.payment__label {
+  width: 20%;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.payment__deliveryStreetAddress {
+  width: 20%;
+  padding: 15px;
+}
+
+.payment__basketItems {
+  background: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+}
+
+.payment__paymentMethod {
+  display: flex;
+}
+
+.payment__contents {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__contents > p {
+  font-weight: 700;
+}
+
+.payment__basketItemsList {
+  padding-left: 15px;
+}
+
+.payment__contents {
+  flex: 0.8;
+}
+
+.payment__priceContainer > p {
+  padding-top: 12px;
+  font-weight: 700;
+}
